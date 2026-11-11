@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-item {
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 4px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul class="todo-list">
+        <li class="todo-item">Execute Architect Skill for [Project/Idea]</li>
+        <li class="todo-item">Execute Frontend Skill on [Blueprint / Figma Link]</li>
+        <li class="todo-item">Execute Copywriter Skill for [Business Type / Client]</li>
+    </ul>
+
+    <script>
+        // JavaScript to toggle completion status
+        const todoItems = document.querySelectorAll('.todo-item');
+        todoItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('completed');
+            });
+        });
+    </script>
+</body>
+</html>
+```
